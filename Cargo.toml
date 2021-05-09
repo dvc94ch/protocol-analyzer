@@ -4,6 +4,16 @@ version = "0.1.0"
 authors = ["David Craven <david@craven.ch>"]
 edition = "2018"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
+anyhow = "1.0.40"
+env_logger = "0.8.3"
+fnv = "1.0.7"
+libpacket = { path = "../libpacket" }
+libpcap-analyzer = { path = "../pcap-analyzer/libpcap-analyzer", default-features = false }
+libpcap-tools = { path = "../pcap-analyzer/libpcap-tools" }
+log = "0.4.14"
+parking_lot = "0.11.1"
+pcap-parser = "0.11.1"
+serde_json = "1.0.64"
+
+[dev-dependencies]
