@@ -1,5 +1,5 @@
 [package]
-name = "quinn-noise-dissector"
+name = "protocol-analyzer"
 version = "0.1.0"
 authors = ["David Craven <david@craven.ch>"]
 edition = "2018"
@@ -9,7 +9,6 @@ anyhow = "1.0.40"
 env_logger = "0.8.3"
 fnv = "1.0.7"
 libpacket = { path = "../libpacket" }
-libpcap-analyzer = { path = "../pcap-analyzer/libpcap-analyzer", default-features = false }
 libpcap-tools = { path = "../pcap-analyzer/libpcap-tools" }
 log = "0.4.14"
 parking_lot = "0.11.1"
