@@ -7,9 +7,11 @@ use pcap_parser::data::PacketData as PcapPacket;
 use std::net::{IpAddr, Ipv4Addr};
 use std::sync::Arc;
 
+mod keyfile;
 pub mod protocols;
 pub mod stacks;
 
+pub use crate::keyfile::Keyfile;
 pub use libpcap_tools::PcapEngine;
 
 pub fn engine(handler: ProtocolHandler) -> PcapDataEngine<Analyzer> {
