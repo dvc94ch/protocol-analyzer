@@ -321,9 +321,9 @@ checksum = "18794a8ad5b29321f790b55d93dfba91e125cb1a9edbd4f8e3150acc771c1a5e"
 
 [[package]]
 name = "libpacket"
-version = "0.1.1"
+version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7070d4fe76b1f314db0e9a40c19f4df3b8ad344fe7c80928ccc4393d1d809842"
+checksum = "d87ecc395fe7fb0a5e9d174ccbb9ac9115c68cc40e4376ca14e58e24751025d9"
 dependencies = [
  "libpacket-core",
  "libpacket-derive",
