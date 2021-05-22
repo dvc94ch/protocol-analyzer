@@ -1,11 +1,16 @@
-use crate::protocols::{Ethernet, Ipv4, Ipv6, Quic, Tcp, Udp, MultistreamSelect, Substream};
+use crate::protocols::{Ethernet, Ipv4, Ipv6, MultistreamSelect, Quic, Substream, Tcp, Udp};
 use crate::{Keyfile, ProtocolHandler, ProtocolRegistry, Registry};
 use libpacket::ethernet::EtherTypes;
 use libpacket::ip::IpNextHeaderProtocols;
 use parking_lot::Mutex;
 use std::sync::Arc;
 
-pub fn libp2p_stack(keyfile: Keyfile) -> (ProtocolHandler<()>, ProtocolRegistry<Substream, &'static str>) {
+pub fn libp2p_stack(
+    keyfile: Keyfile,
+) -> (
+    ProtocolHandler<()>,
+    ProtocolRegistry<Substream, &'static str>,
+) {
     let eth = Arc::new(Mutex::new(Ethernet::default()));
     let ip4 = Arc::new(Mutex::new(Ipv4::default()));
     let ip6 = Arc::new(Mutex::new(Ipv6::default()));

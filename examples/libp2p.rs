@@ -1,10 +1,10 @@
 use anyhow::Result;
-use protocol_analyzer::stacks::libp2p_stack;
+use parking_lot::Mutex;
 use protocol_analyzer::protocols::Substream;
-use protocol_analyzer::{engine, Keyfile, Protocol, Packet, PcapEngine};
+use protocol_analyzer::stacks::libp2p_stack;
+use protocol_analyzer::{engine, Keyfile, Packet, PcapEngine, Protocol};
 use std::fs::File;
 use std::sync::Arc;
-use parking_lot::Mutex;
 
 fn main() -> Result<()> {
     env_logger::init();
