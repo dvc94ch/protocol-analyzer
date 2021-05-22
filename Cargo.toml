@@ -11,7 +11,7 @@ env_logger = "0.8.3"
 fnv = "1.0.7"
 hex = "0.4.3"
 libpacket = "0.1.2"
-libpcap-tools = { path = "../pcap-analyzer/libpcap-tools" }
+libpcap-tools = { git = "https://github.com/rusticata/pcap-analyzer" }
 log = "0.4.14"
 parking_lot = "0.11.1"
 pcap-parser = { version = "0.11.1", features = ["data"] }

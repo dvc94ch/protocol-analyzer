@@ -350,6 +350,7 @@ dependencies = [
 [[package]]
 name = "libpcap-tools"
 version = "0.1.0"
+source = "git+https://github.com/rusticata/pcap-analyzer#eb38fcf2f83a7cec6b3277f3ca5995840e2238bb"
 dependencies = [
  "log",
  "pcap-parser",
